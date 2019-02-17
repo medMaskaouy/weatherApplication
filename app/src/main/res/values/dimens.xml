@@ -1,0 +1,10 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+     <dimen name="cardview_text_margin">16dp</dimen>
+    <dimen name="padding_dialog_title">15dp</dimen>
+    <dimen name="default_margin">10dp</dimen>
+    <dimen name="size_trash">58dp</dimen>
+    <dimen name="size_width">25dp</dimen>
+</resources>

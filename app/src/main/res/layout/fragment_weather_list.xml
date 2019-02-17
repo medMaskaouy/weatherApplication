@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/pullToRefresh"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ProgressBar
+            android:gravity="center"
+            android:layout_width="50dp"
+            android:visibility="gone"
+            android:layout_height="50dp"
+            android:indeterminate="true"
+            android:layout_margin="5dp"
+            android:id="@+id/pb_weather_list"
+            style="?android:attr/progressBarStyle"
+            android:layout_gravity="center_vertical|center_horizontal" />
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/citiesRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            android:layout_marginTop="60dp"
+            />
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay">
+            <android.support.v7.widget.SearchView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/searchView"></android.support.v7.widget.SearchView>
+        </android.support.design.widget.AppBarLayout>
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_add_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/fab_margin"
+            android:src="@drawable/ic_add"
+            app:fabSize="normal"
+            app:layout_anchor="@id/contentFrame"
+            android:layout_gravity="bottom|left" />
+    </FrameLayout>
+</android.support.v4.widget.SwipeRefreshLayout>
